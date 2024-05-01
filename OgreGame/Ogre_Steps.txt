@@ -1,0 +1,48 @@
+				Orge - 3D game
+ 1. Create following folders:
+	1. Scripts
+	2. Objects
+	3. Materials
+	4. Levels
+
+ 2. Create a gameobject 
+       1. cube(floor) --> scale: x-20, y-0.5, z-20; position: y-0.5
+       2. cube(player) --> position-0.25
+ 3. Directional light
+       1. Color-- orange
+       2. Intensity -- 0.45
+       3. Ctrl+D --> To create another directional light --> change color & Intensity --> position: x-0, y-4.08, z-0; Rotation:x-123,y=-30, z=0; Shadow Type --> Hard Shadow
+ 4. Edit --> Render Settings
+       1. Ambient light
+
+ 5. Matrials Folder -> create material 
+	1. Shader --> Diffuse --> Main color --> name it as player
+        2. create a ground material
+        3. create a enemy material
+        4. create a ground material
+ 6. Check whether Box collider is there for player cube
+ 7. Add Rigidbody component
+ 8. Click player object and Choose Edit --> Project Settings --> Input
+    1. Size=3
+ 9. Scripts -> create PlayerMovement
+10. Create anothere cube for Goal
+	1. Box collider
+	2. Check Is Trigger
+	3. Drag and Move it to another position
+	4. Material 
+		1. Goal
+		2. Change shader to transparent/ Diffuse
+		3. Change Color
+		4. Position it properly
+11. Create a cube for Enemy
+12. Under Objects folder create Prefabs and drag the enemy object there
+13. Enemy
+	1. Position it properly
+	2. Create empty gameobject --> to set up patrol point and name it as Patrol --> duplicate
+	3.Patrol Script -- create Transform array
+	4. Player Inspector --> Attach the script --> size = 2 --> drag the gameobjects and place it on element 0 & 1
+
+14. Level 2
+	1. File -> Build settings
+	2. Add Current -- index value 0  -- Development Build check - click Build --create a folder as Build -- give a name and save
+
